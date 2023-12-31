@@ -1,8 +1,25 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  background-color: #909A87;
+  zoom: 80%;
 }
 
-a {
-  color: #00B7FF;
+.container-fluid{
+  border: 5px solid #909A87;
+  background-color: #5B5B5B;
+}
+
+nav{
+  background-color: #909A87;
+  width: 1920px;
+  height: 100px;
+}
+
+li{
+  font-family: Italianno;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.nav-link{
+  color: #F0ECE3;;
 }

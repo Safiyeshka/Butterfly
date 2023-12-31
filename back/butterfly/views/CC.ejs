@@ -3,18 +3,35 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel='stylesheet' href='/stylesheets/error.css' />
+<link rel='stylesheet' href='/stylesheets/CC.css' />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 </style>
 
 <body>
-    <img src = '/images/icon1.png'>    
-    <h1>
-        404
-    </h1>
-    <h2>
-        Page not found
-    </h2>
+    
+    <div id = group1>
+        <img src="<%= picture %>" alt=""/>
+          <h1>
+            <%= title %>
+          </h1>
+        </div>
+
+
+    <div id = group2>
+        <p>
+            <%=desc%>
+        </p>
+    </div>
+
+    <div id = group3>
+        <img class = cc2 src = "<%= picture2 %>">
+        <img class = cc3 src = "<%= picture3 %>">
+        <img class = cc4 src = "<%= picture4 %>">
+
+    </div>
+
 </body>
+</html>

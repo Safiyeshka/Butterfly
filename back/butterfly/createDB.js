@@ -9,8 +9,8 @@ var database = client.db("butterfly");
 database.dropDatabase()
 database = client.db("butterfly");
 const butterflies = database.collection("butterflies");
-const result = await butterflies.insertOne({name:"Greta Oto"});
-console.log(`${result} documents were inserted`);
+const result = await butterflies.insertMany(data);
+console.log(`${result.insertedCount} documents were inserted`);
 } finally {
 await client.close();
 }
