@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://127.0.0.1:27017/test');
 
-const Butterfly = mongoose.model('Butterfly', { name: String });
+var schema = mongoose.Schema({ name: String })
+schema.methods.butterfly = function(){
+    console.log(this.get("name") + " - это бабочки")
+    };
+    
 
-const Butterflies = new Butterfly({ name: 'butterfly_name' });
-Butterflies.save().then(() => console.log('butterfly'));
+const Butterfly = mongoose.model('Butterfly', schema);
+
+const butterflies = new Butterfly({ name: 'Butterflies' });
+butterflies.save().then(() => butterflies.butterfly());
