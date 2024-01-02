@@ -1,13 +1,16 @@
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/test');
+var mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost/test1')
 
-var schema = mongoose.Schema({ name: String })
-schema.methods.butterfly = function(){
-    console.log(this.get("name") + " - это бабочки")
-    };
-    
+var Butterfly = require("./models/butterfly").Butterfly
+var butterfly = new Butterfly({
+  title: "Виндула",
+  nick: "vindula"
+})
+console.log(butterfly);
 
-const Butterfly = mongoose.model('Butterfly', schema);
-
-const butterflies = new Butterfly({ name: 'Butterflies' });
-butterflies.save().then(() => butterflies.butterfly());
+butterfly.save().then(function(savedButterfly) {
+    console.log(savedButterfly.title);
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
