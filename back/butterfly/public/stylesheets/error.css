@@ -28,6 +28,18 @@ h2{
     margin-left: 603px;
 }
 
+p{
+    color: #5B5B5B;
+    font-family: Crimson Text;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 603px;
+}
+
 img{
     width: 148px;
     height: 148px;

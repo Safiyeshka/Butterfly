@@ -7,7 +7,7 @@ var data = [{
     },
     {
           title: "Cethosia Cyane",
-          nick: "cethosia-cyane",
+          nick: "cethosia_cyane",
           avatar: "images/cc1.png",
           desc: "This butterfly species, whose males are orange and females are grey and white, lives in India and China.",
 

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var async = require("async");
 var Butterfly = require("../models/butterfly").Butterfly
 
 
@@ -11,17 +11,22 @@ router.get('/', function(req, res, next) {
 
     
 /* Страница героев */
-router.get('/:nick', function(req, res, next) {
-  Butterfly.findOne({nick:req.params.nick}, function(err,butterfly){
-  if(err) return next(err)
-  if(!butterfly) return next(new Error("Нет такого котенка в этом мультике"))
-  res.render('butterfly', {
-  title: butterfly.title,
-  picture: butterfly.avatar,
-  desc: butterfly.desc
-  })
-  })
-  })
+router.get("/:nick", async (req, res, next) => {
+  try {
+    const butterfly = await Butterfly.findOne({ nick: req.params.nick });
+    console.log(butterfly);
+    if (!butterfly) {
+      throw new Error("Нет такой бабочки");
+    }
+    res.render('butterfly', {
+      title: butterfly.title,
+      picture: butterfly.avatar,
+      desc: butterfly.desc
+    });
+  } catch (err) {
+    next(err);
+  }
+});
   
 
 
