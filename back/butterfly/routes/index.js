@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 /*Caligo Memnon*/
 
-router.get('/caligo_memnon', function(req, res, next) {
+router.get('/butterflies/caligo_memnon', function(req, res, next) {
   res.render('CM', {
     title: "Caligo Memnon",
     picture: "images/cm1.png",
@@ -19,14 +19,14 @@ router.get('/caligo_memnon', function(req, res, next) {
     picture2: "images/cm2.png",
     picture3: "images/cm3.png",
     picture4: "images/cm4.png"
-    
+  
   });
     });
     
   
 /*Cethosia Cyane*/
 
-router.get('/cethosia_cyane', function(req, res, next) {
+router.get('/butterflies/cethosia_cyane', function(req, res, next) {
   res.render('CC', {
     title: "Cethosia Cyane",
     picture: "images/cc1.png",
@@ -39,7 +39,7 @@ router.get('/cethosia_cyane', function(req, res, next) {
   
 /*Doleschallia Bisaltide*/
 
-router.get('/doleschallia_bisaltide', function(req, res, next) {
+router.get('/butterflies/doleschallia_bisaltide', function(req, res, next) {
   res.render('DB', {
     title: "Doleschallia Bisaltide",
     picture: "images/db1.png",
@@ -53,7 +53,7 @@ router.get('/doleschallia_bisaltide', function(req, res, next) {
   
 /*Greta Oto*/
 
-router.get('/greta_oto', function(req, res, next) {
+router.get('/butterflies/greta_oto', function(req, res, next) {
     res.render('GO', {
     title: "Greta Oto",
     picture: "images/go1.png",
@@ -67,7 +67,7 @@ router.get('/greta_oto', function(req, res, next) {
   
 /*Papilio Memnon*/
 
-router.get('/papilio_memnon', function(req, res, next) {
+router.get('/butterflies/papilio_memnon', function(req, res, next) {
     res.render('PM', {
     title: "Papilio Memnon",
     picture: "images/pm1.png",
@@ -81,7 +81,7 @@ router.get('/papilio_memnon', function(req, res, next) {
 
 /*Vindula Dejone*/
 
-router.get('/vindula_dejone', function(req, res, next) {  
+router.get('/butterflies/vindula_dejone', function(req, res, next) {  
     res.render('VD', {
       title: "Vindula Dejone",
       picture: "images/vd1.png",

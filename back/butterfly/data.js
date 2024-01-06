@@ -3,6 +3,10 @@ var data = [{
           nick: 'caligo_memnon',
           avatar: "images/cm1.png",
           desc: "This butterfly species lives in the Amazon rainforest and feeds on fruit rot.",
+          picture: "images/cm1.png",
+          picture2: "images/cm2.png",
+          picture3: "images/cm3.png",
+          picture4: "images/cm4.png",
 
     },
     {

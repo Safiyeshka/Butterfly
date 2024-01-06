@@ -8,6 +8,7 @@ unique: true,
 required: true
 },
 avatar: String,
+picture: String,
 desc: String,
 created:{
 type:Date,
